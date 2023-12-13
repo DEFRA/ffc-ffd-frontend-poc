@@ -1,0 +1,3 @@
+services:
+  ffc-ffd-frontend-poc:
+    command: npm run start:debug

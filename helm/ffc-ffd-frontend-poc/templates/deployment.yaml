@@ -1,0 +1,8 @@
+{{- include "adp-helm-library.deployment" (list . "ffc-ffd-frontend-poc.deployment") -}}
+{{- define "ffc-ffd-frontend-poc.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "adp-helm-library.container" (list . "ffc-ffd-frontend-poc.container") }}
+{{- end -}}

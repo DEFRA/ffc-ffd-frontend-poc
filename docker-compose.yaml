@@ -1,0 +1,10 @@
+services:
+  ffc-ffd-frontend-poc:
+    build:
+      context: .
+      target: production
+    image: ffc-ffd-frontend-poc
+    container_name: ffc-ffd-frontend-poc
+    environment:
+      APPINSIGHTS_CLOUDROLE: ffc-ffd-frontend-poc-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
