@@ -1,3 +1,0 @@
-{{- include "adp-helm-library.cluster-ip-service" (list . "ffc-ffd-frontend-poc.cluster-ip-service") -}}
-{{- define "ffc-ffd-frontend-poc.cluster-ip-service" -}}
-{{- end -}}
