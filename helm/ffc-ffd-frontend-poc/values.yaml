@@ -35,3 +35,12 @@ readinessProbe:
   periodSeconds: 10
   failureThreshold: 3
   timeoutSeconds: 5
+
+service:
+  port: 80
+  type: ClusterIP
+
+ingress:
+  class: nginx
+  endpoint: ffc-ffd-frontend-poc
+  server: example.com

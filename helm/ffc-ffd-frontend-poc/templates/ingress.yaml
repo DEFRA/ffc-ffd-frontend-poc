@@ -1,0 +1,3 @@
+{{- include "adp-helm-library.azure-ingress" (list . "ffc-ffd-frontend-poc.ingress") -}}
+{{- define "ffc-ffd-frontend-poc.ingress" -}}
+{{- end -}}
