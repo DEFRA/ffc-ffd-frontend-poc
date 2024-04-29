@@ -17,12 +17,12 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">FFC FFD Frontend POC</h1>
+      <h1 class="govuk-heading-xl">FCP FFD Frontend POC</h1>
 
       <p class="govuk-body">
         This is a demo application for the technical investigation of patterns and practices
         in developing production quality containerised, cloud native, microservice based applications
-        within the Future Farming and Countryside Programme (FFC).
+        within the Farming and Countryside Programme (FCP).
       </p>
 
       {{ govukWarningText({
@@ -30,6 +30,13 @@
         iconFallbackText: "Warning"
       }) }}
 
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      {{ govukButton({
+        text: "Start now",
+        href: "/question",
+        isStartButton: true
+      }) }}
 
       <h2 class="govuk-heading-m">Before you start</h2>
 
